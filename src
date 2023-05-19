@@ -1,0 +1,18 @@
+--Por ejemplo si tenemos la tabla TABLA1 creada de la forma siguiente:           
+
+CREATE TABLE tabla1 (                                          
+campo1    number(7) PRIMARY KEY,                                          
+campo2    varchar2(5)                                
+);  
+
+--Y queremos añadir un campo3 esto se puede hacer con:  
+
+ALTER TABLE tabla1 ADD(                          
+campo3   number(5)                      
+);     
+
+--Por otro lado si queremos cambiar a que el campo3 permita 7 dígitos en lugar de 5, podemos hacer lo siguiente:          
+
+ ALTER TABLE tabla1 MODIFY(                          
+ campo3   number(7)  
+ );
